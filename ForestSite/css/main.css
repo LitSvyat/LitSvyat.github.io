@@ -2,6 +2,11 @@ body {
 	min-width: 320px;
 	font-family: "Roboto", sans-serif;
 }
+.header-bg {
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-position: center;
+}
 .container {
 	max-width: 1200px;
 	margin: 0px auto;
@@ -42,8 +47,7 @@ body {
 }
 
 
-.header-content {
-	background-image: url("../img/header-bg.jpg");
+.header-content-wrap {
 	margin-top: 50px;
 }
 .hashtag {
@@ -62,6 +66,47 @@ body {
 	max-width: 480px;
 }
 
+.header-controls {
+	display: flex;
+}
+.controls {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-end;
+	justify-content: flex-end;
+}
+.play-video {
+	display: flex;
+	align-items: center;
+}
+.play-video a {
+	text-decoration: none;
+}
+.play {
+	width: 76px;
+	height: 46px;
+	background-color: #FF5353;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 30px;
+	cursor: pointer;
+	margin-right: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+.download-link {
+	display: flex;
+	align-items: center;
+}
+.download-link a{
+	color: #5275E9;
+	text-decoration: none;
+	font-weight: bold;
+}
+.download-link a:hover {
+	text-decoration: underline;
+}
 .header-calculator .count {
 	font-size: 50px;
 }
@@ -99,6 +144,7 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000;
+	background-color: #fff;
 	font-size: 18px;
 	border: 1px solid #7B7B7B;
 	padding: 18px 0px;
