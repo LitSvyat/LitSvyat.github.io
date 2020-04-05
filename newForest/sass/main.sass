@@ -1,0 +1,228 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: #000
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a
+	text-decoration: none
+	color: #000
+
+p
+	margin: 0
+	padding: 0
+
+.h1,.h2,.h3,.h4,.h5,.h6
+	margin: 0
+	padding: 0
+
+
+.button
+	display: block
+	text-transform: uppercase
+	text-align: center
+	background-color: #fff
+	border: 1px solid #CECECE
+	transition: background-color .25s ease, color .25s ease
+	&:hover
+		background-color: $accent
+		color: #fff
+		
+
+
+
+.header-top-line
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 40px
+
+.emblem-wrap
+	display: flex
+	align-items: center
+
+.emblem
+	display: flex
+	align-items: center
+	margin-right: 80px
+	&:last-child
+		margin-right: 0px
+
+.emblem-img
+	padding-right: 10px
+	.samara-gerb
+		width: 66px
+		height: auto
+	.toliatty-gerb
+		width: 49px
+		height: auto
+	.yurdoctor-gerb
+		width: 86px
+		height: auto
+
+.emblem-descr
+	font-size: 20px
+	font-weight: 800
+	span
+		font-size: 16px
+		font-weight: 400
+		color: $descr-text
+
+.contacts-wrap
+	font-family: PFHighwaySans
+	font-size: 24px
+	font-weight: 500
+	text-align: right
+	span
+		font-family: $default-font
+		font-weight: 400
+		font-size: 16px
+		color: $descr-text
+
+.background
+	height: 120vh
+	background-image: url('../img/_src/background.png')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+
+.header-content
+	padding-top: 100px
+	.hashtag
+		color: $accent
+		font-size: 24px
+		font-weight: 500
+	.h1
+		font-size: 75px
+		font-family: PFHighwaySans
+		line-height: 90px
+		padding-top: 100px
+		&:after
+			content: url('../img/_src/evergreen-icon.png')
+			width: 82px
+			height: auto
+			position: absolute
+
+.header-content-wrapper
+	display: flex
+
+.progress-count-wrap
+	max-width: 461px
+	margin-top: 90px
+
+.count-number
+	font-size: 50px
+	font-family: PFHighwaySans
+	font-weight: 500
+	span
+		font-family: $default-font
+
+.progress-title
+	display: flex
+	justify-content: space-between
+	span
+		font-size: 16px
+	p
+		font-size: 24px
+		font-weight: 500
+		line-height: 1
+		&:last-child
+			text-align: right
+		span
+			font-size: 16px
+			color: $descr-text
+			font-weight: 400
+
+.progress-bar
+	width: 100%
+	height: 10px
+	background-color: #F2F2F2
+	margin-top: 5px
+	margin-bottom: 18px
+	.progress-bar-line
+		width: 20%
+		height: 10px
+		background-color: $accent
+
+.button
+	font-size: 18px
+	font-weight: 500
+	padding-top: 17px
+	padding-bottom: 16px
+	margin-top: 24px
+
+.header-text
+	margin-top: 60px
+	line-height: 1.5
+	font-size: 16px
+
+
+.control-wrap
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	margin-left: 40px
+
+.play-video-wrap
+	display: flex
+	align-items: center
+	a
+		padding-right: 7px
+		img
+			width: 104px
+			height: auto
+	span
+		font-size: 14px
+
+.download-wrap
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 50px
+	img
+		width: 49px
+		height: auto
+	a
+		font-size: 18px
+		font-weight: 500
+		color: #5275E9
+		line-height: 1.4
+		padding-left: 23.5px
+		&:hover
+			text-decoration: underline
+
+
+@import "media" // Always at the end

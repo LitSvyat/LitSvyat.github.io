@@ -1,0 +1,134 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.emblem
+		margin-right: 50px
+
+// ≥992px
++media-breakpoint-down(md)
+	.emblem
+		margin-right: 30px
+
+	.emblem-img
+		padding-right: 6px
+		.samara-gerb
+			width: 56px
+		.toliatty-gerb
+			width: 42px
+		.yurdoctor-gerb
+			width: 74px
+
+	.emblem-descr
+		display: none
+
+	.background
+		height: 130vh
+
+	.header-content
+		padding-top: 60px
+		.h1
+			font-size: 60px
+
+	.header-content-wrapper
+		flex-direction: column-reverse
+		justify-content: center
+	
+	.control-wrap
+		flex-direction: row
+		justify-content: flex-start
+		margin-left: 0px
+
+	.download-wrap
+		margin-top: 0px
+		margin-left: 30px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.header-top-line
+		padding-top: 28px
+	.emblem
+		margin-right: 13px
+
+	.background
+		height: 140vh
+
+	.header-content
+		.h1
+			&:after
+				display: none
+
+	.progress-count-wrap
+		margin-top: 40px
+
+	.control-wrap	
+		flex-direction: column
+		margin-top: 30px
+		
+
+// ≥576px
++media-breakpoint-down(xs)
+	.emblem-img
+		padding-right: 0px
+		.samara-gerb
+			width: 40px
+		.toliatty-gerb
+			width: 30px
+		.yurdoctor-gerb
+			width: 60px
+
+	.contacts-wrap
+		font-size: 15px
+		span
+			font-size: 11px
+
+	.background
+		height: 50vh
+
+	.header-content
+		padding-top: 30px
+		.hashtag
+			font-size: 20px
+		.h1
+			font-size: 35px
+			line-height: 1.3
+			padding-top: 30px
+			&:after
+				display: none
+
+	.header-text
+		margin-top: 30px
+	
+	.play-video-wrap
+		a
+			padding-right: 5px
+			img
+				width: 60px
+				height: auto
+		span
+			font-size: 11px
+	
+	.download-wrap
+		img
+			width: 29px
+		a
+			font-size: 12px
+			padding-left: 15.5px
+	
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
